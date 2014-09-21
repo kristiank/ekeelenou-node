@@ -1,0 +1,19 @@
+extends layout
+
+block append head
+  script(type='text/javascript', src='/socket.io/socket.io.js')
+  script(type='text/javascript', src='/javascripts/ekeelenou-klient.js')
+
+block content
+  h1= title
+  p Tere tulemast!
+  p Tee päring oma valitud allikates
+  input#queryString(type='text', placeholder='Mida sa otsid?')
+  input#queryButton(type='button', value='Päri')
+  
+  ul Vali allikaid
+    li Eesti Vikipeedia
+      input.addSource(type='button', value='vali', data-id='WikiEst')
+      input.removeSource(type='button', value='eemalda', data-id='WikiEst')
+  
+  div#results

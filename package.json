@@ -1,0 +1,13 @@
+{
+    "name": "EKI-e-keelenou",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+	"start": "node app.js"
+    },
+    "dependencies": {
+	"express": "3.5.2",
+	"jade": "*",
+	"socket.io": "1.1.0"
+    }
+}

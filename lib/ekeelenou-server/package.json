@@ -1,0 +1,4 @@
+{
+  "name": "ekeelenou-server",
+  "main": "./ekeelenou-server.js"
+}
