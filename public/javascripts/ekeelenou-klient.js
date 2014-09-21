@@ -1,12 +1,14 @@
+// avame sokli serveri juurde
 var socket = io.connect('/');
 
+// seome soklisündmustele funktsioonid
 socket.on('queryData', function (data) {
   data = JSON.parse(data);
   $('#results').append('<div>' + data + '</div>');
 });
 
 $(document).ready(function(){
-  // bind actions to buttons
+  // seome nupudele funktsioonid
   $('#queryButton').click(function(){
     var data = {
       queryString: $('#queryString').val(),
@@ -24,7 +26,6 @@ $(document).ready(function(){
     var data = {
       id: $(this).data('id')
     };
-    console.log('removeSource ', data.id);
     socket.emit('removeSource', JSON.stringify(data));
   });
 });
