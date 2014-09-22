@@ -6,6 +6,16 @@ socket.on('queryData', function (data) {
   data = JSON.parse(data);
   $('#results').append('<div>' + data + '</div>');
 });
+socket.on('availableSources', function (data) {
+  data = JSON.parse(data);
+  console.log('socket selectedSources: ', data);
+  $('#availableSources').html('<div>' + data + '</div>');
+});
+socket.on('selectedSources', function (data) {
+  data = JSON.parse(data);
+  console.log('socket selectedSources: ', data);
+  $('#selectedSources').html('<div>' + data + '</div>');
+});
 
 $(document).ready(function(){
   // seome nupudele funktsioonid
