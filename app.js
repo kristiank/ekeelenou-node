@@ -1,6 +1,6 @@
 
 /**
- * Module dependencies.
+ * @module ekeelenou
  */
 
 var express = require('express');
@@ -33,7 +33,8 @@ if ('development' === app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/dokumentatsioon', express.static(path.join(__dirname, 'public', 'dokumentatsioon')));
+app.get('/users', user.list); // @todo: mis asi see on?
 
 var server = http.createServer(app).listen(app.get('port'), function(){
     console.log('Express server listening on port ' + app.get('port'));

@@ -1,3 +1,9 @@
+/**
+ * E-keelenõu klient
+ * 
+ * @module ekeelenou-klient
+ */
+
 // avame sokli serveri juurde
 var socket = io.connect('/');
 
