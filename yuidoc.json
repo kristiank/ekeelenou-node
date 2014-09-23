@@ -1,0 +1,12 @@
+{
+    "name": "EKI leksikaalsete ressursside serveri API",
+    "description": "Server ja klient kommunikeeruvad sokli kaudu.",
+    "version": "0.0.1",
+    "url": "https://github.com/kristiank/ekeelenou-node",
+    "logo": "../images/favicon.ico",
+    "options": {
+        "linkNatives": "true",
+        "paths": "*/js",
+        "outdir": "./public/dokumentatsioon"
+    }
+}
