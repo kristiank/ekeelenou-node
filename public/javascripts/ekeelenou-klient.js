@@ -10,11 +10,12 @@ var socket = io.connect('/');
 // seome soklisündmustele funktsioonid
 socket.on('queryData', function (data) {
   data = JSON.parse(data);
-  $('#results').append('<div>' + data + '</div>');
+  console.log("queryData received: ", data);
+  $('#results').append('<div>' + data['data'].toString() + '</div>');
 });
 socket.on('availableSources', function (data) {
   data = JSON.parse(data);
-  console.log('socket selectedSources: ', data);
+  console.log('socket availableSources: ', data);
   $('#availableSources').html('<div>' + data + '</div>');
 });
 socket.on('selectedSources', function (data) {
