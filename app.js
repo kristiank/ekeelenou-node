@@ -5,10 +5,8 @@
 
 var express = require('express');
 var routes  = require('./routes');
-var user    = require('./routes/user');
 var http    = require('http');
 var path    = require('path');
-//~ var io      = require('socket.io');
 var ekn     = require('./lib/ekeelenou-server');
 
 var app = express();
