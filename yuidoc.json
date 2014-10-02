@@ -6,7 +6,7 @@
     "logo": "../images/favicon.ico",
     "options": {
         "linkNatives": "true",
-        "paths": "*/js",
-        "outdir": "./public/dokumentatsioon"
+        "paths": ["."],
+        "outdir": "./public/docs"
     }
 }

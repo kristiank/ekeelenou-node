@@ -11,4 +11,4 @@ Server jookseb ```Node.js```-is ja kahepoolne kommunikatsioon kliendiga käib
 WebSocket-i kaudu (```Socket.io```).
 
 Server jookseb praegu ainult [arenduspilves](https://ekeelenou-node-c9-kristiank.c9.io/), 
-kus asub ka koodi genereeritud [dokumentatsioon](https://ekeelenou-node-c9-kristiank.c9.io/dokumentatsioon/).
+kus asub ka koodi genereeritud [dokumentatsioon](https://ekeelenou-node-c9-kristiank.c9.io/docs/).
